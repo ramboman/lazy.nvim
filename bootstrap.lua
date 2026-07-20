@@ -26,11 +26,12 @@ function M.setup()
         "DiagnosticInfo",
       },
     }, true, {})
-    local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+    local lazyrepo = "https://github.com/ramboman/lazy.nvim.git"
     local ok, out = pcall(vim.fn.system, {
       "git",
       "clone",
       "--filter=blob:none",
+      "--branch=feat-version-function2",
       lazyrepo,
       lazypath,
     })
